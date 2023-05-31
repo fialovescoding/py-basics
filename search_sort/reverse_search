@@ -1,0 +1,16 @@
+# And a number to be searched
+n = 12
+
+# In the below list
+num_list = [0,6,1,7,9,12,5,6,21,7,8]
+
+# Print every number in num_list using index variable
+nums_in_list = len(num_list)
+i = nums_in_list - 1
+while i >= 0:
+    s = num_list[i]
+    print(s, i)
+    if s == n:
+        print("position of n = ", i)
+        break
+    i = i - 1
