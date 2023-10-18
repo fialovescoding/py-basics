@@ -1,0 +1,30 @@
+digets = []
+
+n = int(input("Enter a number: "))
+
+while n != 0:
+    q = int(n / 10)
+    r = n % 10
+    digets .append (r)
+    print(n, q, r)
+    n = q
+print (digets)
+# print ("Done")
+
+m = len(digets) / 2
+m = int(m)
+############################
+      # print (j,k) #
+############################
+for k in range(0, m):
+    j = -1 * (k + 1)
+    dig_compare = (digets[k] == digets[j])
+    print(k, j, digets[k], digets[j], dig_compare)
+    # if dig_compare is False then not palindrome
+    if dig_compare is False:
+        print ("it is not a palindrome")
+        exit()
+
+print("it is a palindrome")
+    
+# print (digets)
