@@ -1,5 +1,5 @@
 # n is a number which we are cheeking if it is a prime number 
-n = 4
+n = 103
 
 # k
 k = 2

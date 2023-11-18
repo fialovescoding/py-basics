@@ -1,5 +1,5 @@
 # making variable num_list
-num_list = [2, 7, 4]
+num_list = [8, 7, 1]
 
 # making variables for 100's (h), 10's (t) and 1's (o) through for loops
 for o in num_list:

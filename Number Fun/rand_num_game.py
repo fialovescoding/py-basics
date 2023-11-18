@@ -32,7 +32,7 @@ numlist = list(range(L + 1 , H))
 # q counts the number of random numbers generated so far (which should be at max = N)
 q = 0
 len_numlist = len(numlist)
-# Create an empty list to hiold randomly picked numbers
+# Create an empty list to hold randomly picked numbers
 randlist = []
 # Run the loop till we've generated N numbers, or till no more numbers in numlist
 while q < N and len_numlist > 0:
@@ -51,12 +51,32 @@ while q < N and len_numlist > 0:
 # Print the rand_list and ask user to sort them in ascending order
 
 print(randlist)
-message = "Reassemble the given list"
-message.split(",")
-message = (input("Reassemble the given list: "))
-print("The value of your input is", message)
+message = input("Reassemble the given list: ")
+try:
+    # Split user input, and convert each 'str' to 'int'
+    split_input = message.split(",")
+    print(split_input)
+
+    answer_list = []
+    for s in split_input:
+        m = int(s)
+        answer_list.append(m)
+
+    answer_list = [int(s) for s in split_input]
+    print(answer_list)
+except:
+    print('Some error occured')
+    exit()
+
+#TODO: Sort using only if/for/while, don't use sort function
+
+randlist.sort()
+print('expected:', randlist)
+
+# print("The value of your input is", message)
 
 # Check if user entered the numbers in correct order or not.
 # If correct, print "Good Work", else print "Better luck next time"
+
 
 #TODO: Next step, add time limit, the user must enter list in ascending order within 30 seconds
