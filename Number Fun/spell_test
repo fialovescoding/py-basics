@@ -1,0 +1,7 @@
+word = "Commands"
+n = len(word)
+from random import randint
+i = randint(0 , n - 1)
+word = word.replace(word[i], '_')
+print(word)
+
